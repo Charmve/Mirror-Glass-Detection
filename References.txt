@@ -9,3 +9,6 @@ https://code.datasciencedojo.com/datasciencedojo/datasets/tree/master/Glass%20Id
 [3] UCI-glass-detection
 https://github.com/aaqibqadeer/UCI-glass-detection/blob/master/Solution/Solution.ipynb
 
+[4] Mirror and Glass Detection/Segmentation
+https://www.cs.cityu.edu.hk/~rynson/projects/mirror_glass/MirrorGlassDetection.html
+
