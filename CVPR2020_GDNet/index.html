@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CVPR2020_GDNet</title>
+
+<style media="screen" type="text/css">
+body
+{
+  border: 0pt none;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0pt;
+  outline-color: invert;
+  outline-style: none;
+  outline-width: 0pt;
+  padding: 0pt;
+  vertical-align: baseline;
+}
+body {
+  position: relative;
+  margin: 3em auto 2em auto;
+  width: 1080px;
+  font-family: Times New Roman, Lato, Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  background: #fdfdfd;
+}
+</style>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?1ec4ad5c61857459aa78d5ee7ddee28d";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</head>
+
+<body>
+<h3 align="center"><i><font size="3" face="Palatino Linotype">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2020</font></i></h3>
+
+<table align="center">
+<td align="center">
+<h1>Don't Hit Me! Glass Detection in Real-world Scenes</h1>
+<h3>
+	<a href="http://mhaiyang.github.io" target="_blank"><font size="3"><b>Haiyang Mei</b></font></a><sup><font size="2">1</font></sup>&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="http://faculty.dlut.edu.cn/yangxin/zh_CN/index/949121/list/index.htm" target="_blank"><font size="3"><b>Xin Yang</b></font></a><sup><font size="2">1,4,*</font></sup>&nbsp;&nbsp;&nbsp;&nbsp;
+	<font size="3">Yang Wang</font><sup><font size="2">1</font></sup>&nbsp;&nbsp;&nbsp;&nbsp;
+	<font size="3">Yuanyuan Liu</font><sup><font size="2">1</font></sup>&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="http://www.shengfenghe.com/" target="_blank"><font size="3"><b>Shengfeng He</b></font></a><sup><font size="2">2</font></sup>&nbsp;&nbsp;&nbsp;&nbsp;
+	<br>
+	<font size="3">Qiang Zhang</font><sup><font size="2">1</font></sup>&nbsp;&nbsp;&nbsp;&nbsp;
+	<font size="3">Xiaopeng Wei</font><sup><font size="2">1,*</font></sup>&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="http://www.cs.cityu.edu.hk/~rynson/" target="_blank"><font size="3">Rynson W.H. Lau</font></a><sup><font size="2">3</font></sup>
+</h3>
+
+<sup><font size="2">1</font></sup>
+<b><a><font size="3">Dalian University of Technology</font></a></b>&nbsp;&nbsp;&nbsp;&nbsp;
+<sup><font size="2">2</font></sup>
+<b><a><font size="3">South China University of Technology</font></a></b>&nbsp;&nbsp;&nbsp;&nbsp;
+	<br>
+<sup><font size="2">3</font></sup>
+<b><a><font size="3">City University of Hong Kong</font></a></b>&nbsp;&nbsp;&nbsp;&nbsp;
+<sup><font size="2">4</font></sup>
+<b><a><font size="3">Advanced Institute of Information Technology Peking University</font></a></b>
+
+<!--<br>-->
+<!--<br>&nbsp;-->
+<!--&lt;!&ndash;<sup><font size="2">&dagger;</font></sup>&ndash;&gt;-->
+<!--<sup><font size="3">*</font></sup>-->
+<!--<a><font size="3"> Corresponding author</font></a>-->
+<br>
+<br>&nbsp;
+
+	<b><a><font size="3"> Contact us:&nbsp;&nbsp;&nbsp;&nbsp;<i>xinyang@dlut.edu.cn&nbsp;&nbsp;&nbsp;&nbsp;mhy666@mail.dlut.edu.cn</i></font></a></b>
+
+</td>
+</table>
+
+
+<br><br>
+<table align="center">
+<tr>
+	<td align="center"><embed src="9250-1min.mp4" width="640" height="360"></td>
+</tr>
+</table>
+
+<!--<br>-->
+<!--<table align="center">-->
+<!--<tr>-->
+	<!--<td align="center"><img border=0 height=350 width=800 src="Glass.gif"></td>-->
+<!--</tr>-->
+<!--</table>-->
+
+<br>
+<h2><p><font size="6"><b>Abstract</b></font></p></h2>
+<hr/>
+<p><font size="4" face="Palatino Linotype">Glass is very common in our daily life. Existing computer vision systems neglect the glass and thus might lead to severe consequence, e.g., the robot might crash into the glass wall. However, sensing the presence of the glass is not straightforward. The key challenge is that arbitrary objects/scenes can appear behind the glass and the content presented in the glass region typically similar to those outside of it. In this paper, we raise an interesting but important problem of detecting glass from a single RGB image. To address this problem, we construct a large-scale glass detection dataset (GDD) and design a glass detection network, called GDNet, by learning abundant contextual features from a global perspective with a novel large-field contextual feature integration module. Extensive experiments demonstrate the proposed method achieves superior glass detection results on our GDD test set. Particularly, we outperform state-of-the-art methods that fine-tuned for glass detection.
+</font></p>
+
+
+<br>
+<h2><p><font size="6"><b>GDNet</b></font></p></h2>
+<hr/>
+<table align="center">
+<tr>
+	<td align="center"><img border=0 height=270 width=960 src="pipeline.png"></td>
+</tr>
+</table>
+
+<br>
+<h2><p><font size="6"><b>Visual Results</b></font></p></h2>
+<hr/>
+<table align="center">
+<tr>
+	<td align="center"><img border=0 height=300 width=900 src="CVPR2020_Glass_1.gif"></td>
+</tr>
+</table>
+
+
+<!--<br>-->
+<!--<h2><p><font size="6"><b>Glass Detection Dataset (GDD)</b></font></p></h2>-->
+<!--<hr/>-->
+<!--<table align="center">-->
+<!--<tr>-->
+	<!--<td align="center"><img border=0 height=120 width=100 src="dataset\603.jpg"></td>-->
+	<!--<td align="center"><img border=0 height=120 width=100 src="dataset\3850.jpg"></td>-->
+	<!--<td align="center"><img border=0 height=120 width=100 src="dataset\5059.jpg"></td>-->
+	<!--<td align="center"><img border=0 height=120 width=100 src="dataset\5039.jpg"></td>-->
+	<!--<td align="center"><img border=0 height=120 width=100 src="dataset\5185.jpg"></td>-->
+	<!--<td align="center"><img border=0 height=120 width=100 src="dataset\5083.jpg"></td>-->
+	<!--<td align="center"><img border=0 height=120 width=100 src="dataset\5239.jpg"></td>-->
+	<!--<td align="center"><img border=0 height=120 width=100 src="dataset\1021.jpg"></td>-->
+	<!--<td align="center"><img border=0 height=120 width=100 src="dataset\5031.jpg"></td>-->
+	<!--<td align="center"><img border=0 height=120 width=100 src="dataset\4999.jpg"></td>-->
+<!--</tr>-->
+<!--<tr>-->
+	<!--<td align="center"><img border=0 height=120 width=100 src="dataset\603.png"></td>-->
+	<!--<td align="center"><img border=0 height=120 width=100 src="dataset\3850.png"></td>-->
+	<!--<td align="center"><img border=0 height=120 width=100 src="dataset\5059.png"></td>-->
+	<!--<td align="center"><img border=0 height=120 width=100 src="dataset\5039.png"></td>-->
+	<!--<td align="center"><img border=0 height=120 width=100 src="dataset\5185.png"></td>-->
+	<!--<td align="center"><img border=0 height=120 width=100 src="dataset\5083.png"></td>-->
+	<!--<td align="center"><img border=0 height=120 width=100 src="dataset\5239.png"></td>-->
+	<!--<td align="center"><img border=0 height=120 width=100 src="dataset\1021.png"></td>-->
+	<!--<td align="center"><img border=0 height=120 width=100 src="dataset\5031.png"></td>-->
+	<!--<td align="center"><img border=0 height=120 width=100 src="dataset\4999.png"></td>-->
+
+<!--</tr>-->
+<!--</table>-->
+
+<!--<br>-->
+<!--<h2><p><font size="6"><b>Updated Dataset Statistics</b></font></p></h2>-->
+<!--<hr/>-->
+<!--<table align="center">-->
+<!--<tr>-->
+	<!--<td align="center"><iframe src="statistics\\msd_size.pdf" frameborder="0" width="100%" height="100%" scroll="no"></iframe>(a) mirror area distribution</td>-->
+	<!--<td align="center"><iframe src="statistics\\msd_type.pdf" frameborder="0" width="100%" height="100%" scroll="no"></iframe>(b) mirror shape distribution</td>-->
+	<!--<td align="center"><iframe src="statistics\\msd_location.pdf" frameborder="0" width="100%" height="100%" scroll="no"></iframe>(c) mirror location distribution</td>-->
+	<!--<td align="center"><iframe src="statistics\\msd_contrast.pdf" frameborder="0" width="100%" height="100%" scroll="no"></iframe>(d) color contrast distribution</td>-->
+<!--</tr>-->
+<!--</table>-->
+
+
+<br>
+<h2><p><font size="6"><b>Downloads</b></font></p></h2>
+<hr/>
+<div align="left">
+		<table>						
+		<tr align="left">
+		<td>
+			<font size="4">Paper</font>
+		</td>
+		<td>
+			<!--<font size="4">: [ GDNet.pdf ]</font>-->
+			<font size="4">: <a href="http://openaccess.thecvf.com/content_CVPR_2020/papers/Mei_Dont_Hit_Me_Glass_Detection_in_Real-World_Scenes_CVPR_2020_paper.pdf" target="_blank">[ GDNet.pdf ]</a></font>
+		</td>
+		</tr>
+
+		<!--<tr align="left">-->
+		<!--<td>-->
+			<!--<font size="4">Glass Detection Dataset</font>-->
+		<!--</td>-->
+		<!--<td>-->
+		<!--<font size="4">: [ Google Drive ]</font>-->
+		<!--&lt;!&ndash;<font size="4">: <a href="" target="_blank">[ Google Drive ]</a></font>&ndash;&gt;-->
+		<!--</td>-->
+		<!--</tr>-->
+							
+		<tr align="left">
+		<td>
+			<font size="4">Experimental results</font>
+		</td>
+		<td>
+		<font size="4">: [ Results.zip ]</font>
+		</td>
+
+		</tr>
+
+		<tr align="left">
+		<td>
+			<font size="4">Pre-trained model.</font>
+		</td>
+		<td>
+			<font size="4">: [ GDNet.pth ]</font>
+			<!--<font size="4">: <a href="" target="_blank">[ GDNet.pth ]</a></font>-->
+		</td>
+		</tr>
+					
+		<tr align="left">
+		<td>
+			<font size="4">Source Code.</font>
+		</td>
+		<td>
+			<font size="4">: [ Code ]</font>
+			<!--<font size="4">: <a href="" target="_blank">[ Code ]</a> </font>-->
+		</td>
+		</tr>	
+			
+			
+		</table>
+</div>
+<br>
+<br>
+
+
+<h2><p><font size="6" color="black"><b>Dataset</b></font></p></h2>
+<hr/>								
+<font size="3">
+	To request access to the dataset for non-commercial use, please review the terms and conditions. If you agree with them, please send us a request (<b>Prof. Xin Yang, xinyang@dlut.edu.cn</b>). Also, please use your official university/company email address. Thank you!
+
+	<br>
+	<br>
+
+	<b>Terms and Conditions</b>
+	<br>
+
+The dataset can be used freely if you agree with all the following terms.<br>
+
+- The dataset is used only for non-commercial purposes, such as teaching and research. You do not use the dataset or any of its modified versions for any purposes of commercial advantage or private financial gain.<br>
+- You do not distribute the dataset or any of its modified versions to other individuals, institutes, companies, associations or public.<br>
+- In case you use the dataset within your research papers, you refer to our publications on our website. If the dataset is used in media, a link to our website is included.<br>
+- We reserve all rights that are not explicitly granted to you. The dataset is provided as is, and you take full responsibility for any risk of using it. There may be inaccuracies although we tried, and will try our best to rectify any inaccuracy once found.
+
+</font>
+
+
+<h2><p><font size="6" color="black"><b>BibTex</b></font></p></h2>
+<hr/>
+<font size="3">
+@InProceedings{Mei_2020_CVPR,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;author = {Mei, Haiyang and Yang, Xin and Wang, Yang and Liu, Yuanyuan and He, Shengfeng and Zhang, Qiang and Wei, Xiaopeng and Lau, Rynson W.H.},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;title = {Don't Hit Me! Glass Detection in Real-World Scenes},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;month = {June},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;year = {2020}<br>
+}
+</font>
+
+
+<br><br>
+<h2>Website visit statistics</h2>
+<hr/>
+<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=400&t=tt&d=ZXX4dUsb2jA8wDoUQaofikwHAlXOeKZODm1d9NP7DMU'></script>
+
+
+</body>
+
+</html>
