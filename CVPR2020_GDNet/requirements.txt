@@ -1,0 +1,4 @@
+Cython
+scikit-image==0.16.2
+xlwt
+tqdm
