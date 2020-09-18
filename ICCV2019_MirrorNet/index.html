@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ICCV2019_MirrorNet</title>
+
+<style media="screen" type="text/css">
+body
+{
+  border: 0pt none;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0pt;
+  outline-color: invert;
+  outline-style: none;
+  outline-width: 0pt;
+  padding: 0pt;
+  vertical-align: baseline;
+}
+body {
+  position: relative;
+  margin: 3em auto 2em auto;
+  width: 1080px;
+  font-family: Times New Roman, Lato, Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  background: #fdfdfd;
+}
+</style>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?1ec4ad5c61857459aa78d5ee7ddee28d";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</head>
+
+<body>
+<h3 align="center"><i><font size="3" face="Palatino Linotype">IEEE International Conference on Computer Vision (<b>ICCV</b>) 2019</font></i></h3>
+
+<table align="center">
+<td align="center">
+<h1>Where Is My Mirror?</h1>
+<h3>
+	<font size="3">Xin Yang</font><sup><font size="2">1,*</font></sup>&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="http://mhaiyang.github.io" target="_blank"><font size="3"><b>Haiyang Mei</b></font></a><sup><font size="2">1,*</font></sup>&nbsp;&nbsp;&nbsp;&nbsp;
+	<font size="3">Ke Xu</font><sup><font size="2">1,3</font></sup>&nbsp;&nbsp;&nbsp;&nbsp;
+	<font size="3">Xiaopeng Wei</font><sup><font size="2">1</font></sup>&nbsp;&nbsp;&nbsp;&nbsp;
+	<font size="3">Baocai Yin</font><sup><font size="2">1,2</font></sup>&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="http://www.cs.cityu.edu.hk/~rynson/" target="_blank"><font size="3">Rynson W.H. Lau</font></a><sup><font size="2">3,&dagger;</font></sup>
+</h3>
+
+<sup><font size="2">1</font></sup>
+<b><a><font size="3">Dalian University of Technology</font></a></b>&nbsp;&nbsp;&nbsp;&nbsp;
+<sup><font size="2">2</font></sup>
+<b><a><font size="3">Peng Cheng Laboratory</font></a></b>&nbsp;&nbsp;&nbsp;&nbsp;
+<sup><font size="2">3</font></sup>
+<b><a><font size="3">City University of Hong Kong</font></a></b>
+
+<br>
+<br>
+<sup><font size="2">*</font></sup>
+<a><font size="2">Joint first authors</font></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<sup><font size="2">&dagger;</font></sup>
+<a><font size="2"> Rynson Lau is the corresponding author and he led this project</font></a>
+
+</td>
+</table>
+
+<br>
+<br>
+<table align="center">
+<tr>
+	<td align="center"><img border=0 height=600 width=720 src="Mirror.gif"></td>
+</tr>
+</table>
+
+
+<br>
+<h2><p><font size="6"><b>Abstract</b></font></p></h2>
+<hr/>
+<p><font size="4" face="Palatino Linotype">Mirrors are everywhere in our daily lives. Existing computer vision systems do not consider mirrors, and hence may get confused by the reflected content inside a mirror, resulting in a severe performance degradation. However, separating the real content outside a mirror from the reflected content inside it is non-trivial.  The key challenge lies in that mirrors typically reflect contents similar to their surroundings, making it very difficult to differentiate the two. In this paper, we present a novel method to accurately segment mirrors from an input image. To the best of our knowledge, this is the first work to address the mirror segmentation problem with a computational approach. We make the following contributions. First, we construct a large-scale mirror dataset that contains mirror images with the corresponding manually annotated masks. This dataset covers a variety of daily life scenes, and will be made publicly available for future research. Second, we propose a novel network, called MirrorNet, for mirror segmentation, by modeling both semantical and low-level color/texture discontinuities between the contents inside and outside of the mirrors. Third, we conduct extensive experiments to evaluate the proposed method, and show that it outperforms the carefully chosen baselines from the state-of-the-art detection and segmentation methods.
+</font></p>
+
+
+<br>
+<h2><p><font size="6"><b>MirrorNet</b></font></p></h2>
+<hr/>
+<table align="center">
+<tr>
+	<td align="center"><img border=0 height=270 width=960 src="pipeline.jpg"></td>
+</tr>
+</table>
+
+
+<br>
+<h2><p><font size="6"><b>Mirror Segmentation Dataset (MSD)</b></font></p></h2>
+<hr/>
+<table align="center">
+<tr>
+	<td align="center"><img border=0 height=120 width=100 src="dataset\603.jpg"></td>
+	<td align="center"><img border=0 height=120 width=100 src="dataset\3850.jpg"></td>
+	<td align="center"><img border=0 height=120 width=100 src="dataset\5059.jpg"></td>
+	<td align="center"><img border=0 height=120 width=100 src="dataset\5039.jpg"></td>
+	<td align="center"><img border=0 height=120 width=100 src="dataset\5185.jpg"></td>
+	<td align="center"><img border=0 height=120 width=100 src="dataset\5083.jpg"></td>
+	<td align="center"><img border=0 height=120 width=100 src="dataset\5239.jpg"></td>
+	<td align="center"><img border=0 height=120 width=100 src="dataset\1021.jpg"></td>
+	<td align="center"><img border=0 height=120 width=100 src="dataset\5031.jpg"></td>
+	<td align="center"><img border=0 height=120 width=100 src="dataset\4999.jpg"></td>
+</tr>
+<tr>
+	<td align="center"><img border=0 height=120 width=100 src="dataset\603.png"></td>
+	<td align="center"><img border=0 height=120 width=100 src="dataset\3850.png"></td>
+	<td align="center"><img border=0 height=120 width=100 src="dataset\5059.png"></td>
+	<td align="center"><img border=0 height=120 width=100 src="dataset\5039.png"></td>
+	<td align="center"><img border=0 height=120 width=100 src="dataset\5185.png"></td>
+	<td align="center"><img border=0 height=120 width=100 src="dataset\5083.png"></td>
+	<td align="center"><img border=0 height=120 width=100 src="dataset\5239.png"></td>
+	<td align="center"><img border=0 height=120 width=100 src="dataset\1021.png"></td>
+	<td align="center"><img border=0 height=120 width=100 src="dataset\5031.png"></td>
+	<td align="center"><img border=0 height=120 width=100 src="dataset\4999.png"></td>
+
+</tr>
+</table>
+
+<br>
+<h2><p><font size="6"><b>Updated Dataset Statistics</b></font></p></h2>
+<hr/>
+<table align="center">
+<tr>
+	<td align="center"><iframe src="statistics\\msd_size.pdf" frameborder="0" width="100%" height="100%" scroll="no"></iframe>(a) mirror area distribution</td>
+	<td align="center"><iframe src="statistics\\msd_type.pdf" frameborder="0" width="100%" height="100%" scroll="no"></iframe>(b) mirror shape distribution</td>
+	<td align="center"><iframe src="statistics\\msd_location.pdf" frameborder="0" width="100%" height="100%" scroll="no"></iframe>(c) mirror location distribution</td>
+	<td align="center"><iframe src="statistics\\msd_contrast.pdf" frameborder="0" width="100%" height="100%" scroll="no"></iframe>(d) color contrast distribution</td>
+</tr>
+</table>
+
+<br>
+<h2><p><font size="6"><b>Visual Results</b></font></p></h2>
+<hr/>
+<table align="center">
+<tr>
+	<td align="center"><img border=0 height=300 width=900 src="ICCV_MirrorNet_1.gif"></td>
+</tr>
+</table>
+
+
+<br>
+<h2><p><font size="6"><b>Downloads</b></font></p></h2>
+<hr/>
+<div align="left">
+		<table>						
+		<tr align="left">
+		<td>
+			<font size="4">Paper</font>
+		</td>
+		<td>
+			<font size="4">: <a href="https://arxiv.org/pdf/1908.09101v2.pdf" target="_blank">[ MirrorNet.pdf ]</a></font>
+		</td>
+		</tr>
+
+		<tr align="left">
+		<td>
+			<font size="4">Mirror Segmenation Dataset</font>
+		</td>
+		<td>
+		<font size="4">: <a href="https://drive.google.com/file/d/1Znw92fO6lCKfXejjSSyMyL1qtFepgjPI/view?usp=sharing" target="_blank">[ Google Drive ]</a></font>
+		</td>
+		</tr>
+							
+		<tr align="left">
+		<td>
+			<font size="4">Experimental results</font>
+		</td>
+		<td>
+		<font size="4">: [ Results.zip ]</font>
+		</td>
+
+		</tr>
+
+		<tr align="left">
+		<td>
+			<font size="4">Pre-trained model.</font>
+		</td>
+		<td>
+			<font size="4">: <a href="https://drive.google.com/file/d/1jCSk3VX7nypHbEcup6eTG4K7189irwIc/view?usp=sharing" target="_blank">[ MirrorNet.pth ]</a></font>
+		</td>
+		</tr>
+					
+		<tr align="left">
+		<td>
+			<font size="4">Source Code.</font>
+		</td>
+		<td>
+			<font size="4">: <a href="https://github.com/Mhaiyang/ICCV2019_MirrorNet" target="_blank">[ Code ]</a> </font>
+		</td>
+		</tr>	
+			
+			
+		</table>
+</div>
+<br>
+<br>
+
+
+<h2><p><font size="6" color="black"><b>BibTex</b></font></p></h2>
+<hr/>								
+<font size="4">
+@InProceedings{Yang_2019_ICCV,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;author = {Yang, Xin and Mei, Haiyang and Xu, Ke and Wei, Xiaopeng and Yin, Baocai and Lau, Rynson W.H.},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;title = {Where Is My Mirror?},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;booktitle = {The IEEE International Conference on Computer Vision (ICCV)},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;month = {October},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;year = {2019}<br>
+}
+</font>
+
+<br><br>
+<h2>Website visit statistics</h2>
+<hr/>
+<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=400&t=tt&d=Cnq_aMfvT9JI2LYLONXnWvUkgSy2at6NMKiDvf-r40A'></script>
+
+
+</body>
+
+</html>
