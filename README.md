@@ -99,7 +99,7 @@ some special visual properties that can be used for detection. Unlike these work
 <br>
 <br>
 
-*Last updated in July 2020.*
+*<i>Last updated in July 2020.</i>
 
 <div align=center>
   <img src="./MirrorGlassDetection_files/counter.cgi">
