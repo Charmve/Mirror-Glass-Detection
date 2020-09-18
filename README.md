@@ -11,8 +11,8 @@ some special visual properties that can be used for detection. Unlike these work
                                                                          
 <p>We are also interested in exploring the application of our mirror/glass detection methods in autonomous navigation.</p>   
 
-<br>
-<hr>
+<hr><br>
+
 
 ## Progressive Mirror Detection
 
@@ -28,16 +28,17 @@ some special visual properties that can be used for detection. Unlike these work
 <div align=center>
   <img src="./MirrorGlassDetection_files/image001.jpg">
   <p>
-    Figure 1. Visualization of our progressive approach to recognizing mirrors from a single image. By finding correspondences between objects inside and outside of the mirror and then explicitly locating the miror edges, we can detect the mirror region more reliably.</p>
+    <i><b>Figure 1</b>. Visualization of our progressive approach to recognizing mirrors from a single image. By finding correspondences between objects inside and outside of the mirror and then explicitly locating the miror edges, we can detect the mirror region more reliably.</i>
+      </p>
 </div>
 <br>
 
 <p><b>Input-Output:</b>Given an input image, our network outputs a binary mask that indicate where mirrors are.</p>
 
 <p><b>Abstract.</b> The mirror detection problem is important as mirrors can affect the performances of many vision tasks. It is a difficult problemsince it requires an understanding of global scene semantics. Recently, a method was proposed to detect mirrors by learning multi-level contextual contrasts between inside and outside of mirrors, which helps locate mirror edges implicitly. We observe that the content of a mirror reflects the content of its surrounding, separated by the edge of the mirror. Hence, we propose a model in this paper to progressively learn the content similarity between the inside and outside of the mirror while explicitly detecting the mirror edges. Our work has two main contributions. First, we propose a new relational contextual contrasted local (RCCL) module to extract and compare the mirror features with its corresponding context features, and an edge detection and fusion (EDF) module to learn the features of mirror edges in complex scenes via explicit supervision. Second, we construct a challenging benchmark dataset of 6,461 mirror images. Unlike the existing MSD dataset, which has limited diversity, our dataset covers a variety of scenes and is much larger in scale. Experimental results show that our model outperforms relevant state-of-the-art methods.</p>                  
-<br>
 
-<hr>
+
+<hr><br>
 
 ## Don't Hit Me! Glass Detection in Real-world Scenes   
 
@@ -53,7 +54,7 @@ some special visual properties that can be used for detection. Unlike these work
 <div align=center>
   <img src="./MirrorGlassDetection_files/image002.jpg">
   <p>
-    Figure 2. Problems with glass in existing vision tasks. In depth prediction, existing method [16] wrongly predicts the depth of the scene behind the glass, instead of the depth to the glass (1st row of (b)). For instance segmentation, Mask RCNN [9] only segments the instances behind the glass, not aware that they are actually behind the glass (2nd row of (b)). Besides, if we directly apply an existing singe-image reflection removal (SIRR) method [36] to an image that is only partially covered by glass, the non-glass region can be corrupted (3rd row of (b)). GDNet can detect the glass (c) and then correct these failure cases (d).
+    <i><b>Figure 2</b>. Problems with glass in existing vision tasks. In depth prediction, existing method [16] wrongly predicts the depth of the scene behind the glass, instead of the depth to the glass (1st row of (b)). For instance segmentation, Mask RCNN [9] only segments the instances behind the glass, not aware that they are actually behind the glass (2nd row of (b)). Besides, if we directly apply an existing singe-image reflection removal (SIRR) method [36] to an image that is only partially covered by glass, the non-glass region can be corrupted (3rd row of (b)). GDNet can detect the glass (c) and then correct these failure cases (d).</i>
   </p>
 </div>
 <br>
@@ -61,9 +62,9 @@ some special visual properties that can be used for detection. Unlike these work
 <p><b>Input-Output:</b>Given an input image, our network outputs a binary mask that indicate where transparent glass regions are.</p>
 
 <p><b>Abstract.</b> Transparent glass is very common in our daily life. Existing computer vision systems neglect it and thus may have severe consequences, e.g., a robot may crash into a glass wall. However, sensing the presence of glass is not straightforward. The key challenge is that arbitrary objects/scenes can appear behind the glass, and the content within the glass region is typically similar to those behind it. In this paper, we propose an important problem of detecting glass from a single RGB image. To address this problem, we construct a large-scale glass detection dataset (GDD) and design a glass detection network, called GDNet, which explores abundant contextual cues for robust glass detection with a novel large-field contextual feature integration (LCFI) module. Extensive experiments demonstrate that the proposed method achieves more superior glass detection results on our GDD test set than state-of-the-art methods fine-tuned for glass detection.</p>                  
-<br>
 
-<hr>
+
+<hr><br>
 
 ## Where is My Mirror?
 
@@ -80,7 +81,7 @@ some special visual properties that can be used for detection. Unlike these work
  <div align=center>
   <img src="./MirrorGlassDetection_files/image003.jpg">
   <p>
-    Figure 3. Problems with mirrors in existing vision tasks. In depth prediction, NYU-v2 dataset [32] uses a Kinect to capture depth as ground truth. It wrongly predicts the depths of the reflected contents, instead of the mirror depths (b). In instance semantic segmentation, Mask RCNN [12] wrongly detects objects inside the mirrors (c). With MirrorNet, we first detect and mask out the mirrors (d). We then obtain the correct depths (e), by interpolating the depths from surrounding pixels of the mirrors, and segmentation maps (f).
+    <i><b>Figure 3</b>. Problems with mirrors in existing vision tasks. In depth prediction, NYU-v2 dataset [32] uses a Kinect to capture depth as ground truth. It wrongly predicts the depths of the reflected contents, instead of the mirror depths (b). In instance semantic segmentation, Mask RCNN [12] wrongly detects objects inside the mirrors (c). With MirrorNet, we first detect and mask out the mirrors (d). We then obtain the correct depths (e), by interpolating the depths from surrounding pixels of the mirrors, and segmentation maps (f).</i>
   </p>
 </div>
 <br>
@@ -92,8 +93,9 @@ some special visual properties that can be used for detection. Unlike these work
 <br>
 
 +--------------------------------------------------------------------------+
+
+*Last updated in July 2020.*
+
 <div align=center>
   <img src="./MirrorGlassDetection_files/counter.cgi">
 </div>
-
-*Last updated in July 2020.*
