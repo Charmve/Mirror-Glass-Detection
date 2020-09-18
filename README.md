@@ -99,8 +99,8 @@ some special visual properties that can be used for detection. Unlike these work
 <br>
 <br>
 
-*<i>Last updated in July 2020.</i>
-Cite https://www.cs.cityu.edu.hk/
+*<i>Last updated in July 2020.</i><br>
+Cited in https://www.cs.cityu.edu.hk/
 
 <div align=center>
   <img src="./MirrorGlassDetection_files/counter.cgi">
