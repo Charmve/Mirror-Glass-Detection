@@ -14,9 +14,10 @@ some special visual properties that can be used for detection. Unlike these work
 ## Progressive Mirror Detection
 
 <p>
-  [[paper](http://www.cs.cityu.edu.hk/~rynson/papers/cvpr20c.pdf)] |
-  [suppl](http://www.cs.cityu.edu.hk/~rynson/papers/demos/cvpr20c-supp.pdf) |
-  [code] | [dataset]] 
+  [<a href="http://www.cs.cityu.edu.hk/~rynson/papers/cvpr20c.pdf" target="_blank">paper</a>] |
+  [<a href="http://www.cs.cityu.edu.hk/~rynson/papers/demos/cvpr20c-supp.pdf" target="_blank">suppl</a>]|
+  [<a href="http://www.cs.cityu.edu.hk/~rynson/papers/demos/cvpr20c-supp.pdf" target="_blank">code</a>] |
+  [dataset] 
 </p>
 <p>Jiaying Lin, Guodong Wang, and Rynson Lau <br>
   <i>Proc. IEEE CVPR</i>, June 2020</p>
@@ -38,9 +39,9 @@ some special visual properties that can be used for detection. Unlike these work
 ## Don�t Hit Me! Glass Detection in Real-world Scenes   
 
 <p>
-  [[paper](http://www.cs.cityu.edu.hk/~rynson/papers/cvpr20d.pdf)] | 
-  [suppl](http://www.cs.cityu.edu.hk/~rynson/papers/demos/cvpr20d-supp.pdf) | 
-  [code] | [dataset]] 
+  [<a href="http://www.cs.cityu.edu.hk/~rynson/papers/cvpr20d.pdf" target="_blank">paper</a>] | 
+  [<a href="http://www.cs.cityu.edu.hk/~rynson/papers/demos/cvpr20d-supp.pdf" target="_blank">suppl</a>] | 
+  [code] | [dataset]
 </p> 
   
 <p> Haiyang Mei, Xin Yang, Yang Wang, Yuanyuan Liu, Shengfeng He, Qiang Zhang, Xiaopeng Wei, and Rynson Lau <br>
@@ -63,10 +64,10 @@ some special visual properties that can be used for detection. Unlike these work
 ## Where is My Mirror?
 
 <p>
-  [[paper](http://www.cs.cityu.edu.hk/~rynson/papers/iccv19a.pdf)] | 
-  [suppl](http://www.cs.cityu.edu.hk/~rynson/papers/demos/iccv19a-supp.pdf) | 
-  [code and updated](https://github.com/Mhaiyang/ICCV2019_MirrorNet) |
-  [dataset](https://drive.google.com/file/d/1Znw92fO6lCKfXejjSSyMyL1qtFepgjPI/view?usp=sharing)] 
+  [<a href="http://www.cs.cityu.edu.hk/~rynson/papers/iccv19a.pdf" target="_blank">paper</a>] | 
+  [<a href="http://www.cs.cityu.edu.hk/~rynson/papers/demos/iccv19a-supp.pdf" target="_blank">suppl</a>]| 
+  [<a href="https://github.com/Mhaiyang/ICCV2019_MirrorNet" target="_blank">code and updated</a>] |
+  [<a href="https://drive.google.com/file/d/1Znw92fO6lCKfXejjSSyMyL1qtFepgjPI/view?usp=sharing" target="_blank">dataset</a>]
 </p> 
  
 <p>Xin Yang\*, Haiyang Mei\*, Ke Xu, Xiaopeng Wei, Baocai Yin, and Rynson Lau (\* joint first authors) <br>
