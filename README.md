@@ -1,8 +1,6 @@
 # -Mirror Glass Detection-
 
-<hr>Mirror and Glass Detection/Segmentation</hr>
-
-<p align="center"> <font size=4 color=blue><strong>Mirror and Glass Detection/Segmentation</strong></font></p>
+<p align="center"> <font size=4 color="blue"><strong>Mirror and Glass Detection/Segmentation</strong></font></p>
 
 <p>In this project, we are developing techniques for mirror and glass detection/segmentation. While a mirror is a reflective surface that reflects the scene in front of it, glass is a transparent surface that transmits the scene from the back side and often also reflects the scene in front of it too. In general, both mirrors and glass do not have their own visual appearances. They only reflect/transmit the appearances of their surroundings. </p> 
 
@@ -11,7 +9,10 @@
 <p>To the best of our knowledge, my team is the first to develop computational models for automatic detection and segmentation of mirror and transparent glass surfaces. Although there have been some works that investigate the detection of transparent glass objects, these methods mainly focus on detecting wine glass and small glass objects, which have 
 some special visual properties that can be used for detection. Unlike these works, we are more interested in detecting general glass surfaces that may not possess any special properties of their own.</p>                
                                                                          
-<p>We are also interested in exploring the application of our mirror/glass detection methods in autonomous navigation.</p>                              
+<p>We are also interested in exploring the application of our mirror/glass detection methods in autonomous navigation.</p>   
+
+<br>
+<hr>
 
 ## Progressive Mirror Detection
 
@@ -35,10 +36,10 @@ some special visual properties that can be used for detection. Unlike these work
 
 <p><b>Abstract.</b> The mirror detection problem is important as mirrors can affect the performances of many vision tasks. It is a difficult problemsince it requires an understanding of global scene semantics. Recently, a method was proposed to detect mirrors by learning multi-level contextual contrasts between inside and outside of mirrors, which helps locate mirror edges implicitly. We observe that the content of a mirror reflects the content of its surrounding, separated by the edge of the mirror. Hence, we propose a model in this paper to progressively learn the content similarity between the inside and outside of the mirror while explicitly detecting the mirror edges. Our work has two main contributions. First, we propose a new relational contextual contrasted local (RCCL) module to extract and compare the mirror features with its corresponding context features, and an edge detection and fusion (EDF) module to learn the features of mirror edges in complex scenes via explicit supervision. Second, we construct a challenging benchmark dataset of 6,461 mirror images. Unlike the existing MSD dataset, which has limited diversity, our dataset covers a variety of scenes and is much larger in scale. Experimental results show that our model outperforms relevant state-of-the-art methods.</p>                  
 <br>
-<br>
 
+<hr>
 
-## Don�t Hit Me! Glass Detection in Real-world Scenes   
+## Don't Hit Me! Glass Detection in Real-world Scenes   
 
 <p>
   [<a href="http://www.cs.cityu.edu.hk/~rynson/papers/cvpr20d.pdf" target="_blank">paper</a>] | 
@@ -61,8 +62,9 @@ some special visual properties that can be used for detection. Unlike these work
 
 <p><b>Abstract.</b> Transparent glass is very common in our daily life. Existing computer vision systems neglect it and thus may have severe consequences, e.g., a robot may crash into a glass wall. However, sensing the presence of glass is not straightforward. The key challenge is that arbitrary objects/scenes can appear behind the glass, and the content within the glass region is typically similar to those behind it. In this paper, we propose an important problem of detecting glass from a single RGB image. To address this problem, we construct a large-scale glass detection dataset (GDD) and design a glass detection network, called GDNet, which explores abundant contextual cues for robust glass detection with a novel large-field contextual feature integration (LCFI) module. Extensive experiments demonstrate that the proposed method achieves more superior glass detection results on our GDD test set than state-of-the-art methods fine-tuned for glass detection.</p>                  
 <br>
-<br>
-                                                        |
+
+<hr>
+
 ## Where is My Mirror?
 
 <p>
