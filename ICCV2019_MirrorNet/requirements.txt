@@ -1,0 +1,5 @@
+Cython
+scikit-image
+tensorboardX==1.4
+xlwt
+tqdm
