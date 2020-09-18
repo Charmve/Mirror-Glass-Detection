@@ -1,6 +1,8 @@
 # -Mirror Glass Detection-
 
-<p align="center"> Mirror and Glass Detection/Segmentation</p>
+<hr>Mirror and Glass Detection/Segmentation</hr>
+
+<p align="center"> <font size=4 color=blue><strong>Mirror and Glass Detection/Segmentation</strong></font></p>
 
 <p>In this project, we are developing techniques for mirror and glass detection/segmentation. While a mirror is a reflective surface that reflects the scene in front of it, glass is a transparent surface that transmits the scene from the back side and often also reflects the scene in front of it too. In general, both mirrors and glass do not have their own visual appearances. They only reflect/transmit the appearances of their surroundings. </p> 
 
@@ -25,7 +27,7 @@ some special visual properties that can be used for detection. Unlike these work
 <div align=center>
   <img src="./MirrorGlassDetection_files/image001.jpg">
   <p>
-    Visualization of our progressive approach to recognizing mirrors from a single image. By finding correspondences between objects inside and outside of the mirror and then explicitly locating the miror edges, we can detect the mirror region more reliably.</p>
+    Figure 1. Visualization of our progressive approach to recognizing mirrors from a single image. By finding correspondences between objects inside and outside of the mirror and then explicitly locating the miror edges, we can detect the mirror region more reliably.</p>
 </div>
 <br>
 
@@ -50,7 +52,7 @@ some special visual properties that can be used for detection. Unlike these work
 <div align=center>
   <img src="./MirrorGlassDetection_files/image002.jpg">
   <p>
-    Problems with glass in existing vision tasks. In depth prediction, existing method [16] wrongly predicts the depth of the scene behind the glass, instead of the depth to the glass (1st row of (b)). For instance segmentation, Mask RCNN [9] only segments the instances behind the glass, not aware that they are actually behind the glass (2nd row of (b)). Besides, if we directly apply an existing singe-image reflection removal (SIRR) method [36] to an image that is only partially covered by glass, the non-glass region can be corrupted (3rd row of (b)). GDNet can detect the glass (c) and then correct these failure cases (d).
+    Figure 2. Problems with glass in existing vision tasks. In depth prediction, existing method [16] wrongly predicts the depth of the scene behind the glass, instead of the depth to the glass (1st row of (b)). For instance segmentation, Mask RCNN [9] only segments the instances behind the glass, not aware that they are actually behind the glass (2nd row of (b)). Besides, if we directly apply an existing singe-image reflection removal (SIRR) method [36] to an image that is only partially covered by glass, the non-glass region can be corrupted (3rd row of (b)). GDNet can detect the glass (c) and then correct these failure cases (d).
   </p>
 </div>
 <br>
@@ -76,7 +78,7 @@ some special visual properties that can be used for detection. Unlike these work
  <div align=center>
   <img src="./MirrorGlassDetection_files/image003.jpg">
   <p>
-    Problems with mirrors in existing vision tasks. In depth prediction, NYU-v2 dataset [32] uses a Kinect to capture depth as ground truth. It wrongly predicts the depths of the reflected contents, instead of the mirror depths (b). In instance semantic segmentation, Mask RCNN [12] wrongly detects objects inside the mirrors (c). With MirrorNet, we first detect and mask out the mirrors (d). We then obtain the correct depths (e), by interpolating the depths from surrounding pixels of the mirrors, and segmentation maps (f).
+    Figure 3. Problems with mirrors in existing vision tasks. In depth prediction, NYU-v2 dataset [32] uses a Kinect to capture depth as ground truth. It wrongly predicts the depths of the reflected contents, instead of the mirror depths (b). In instance semantic segmentation, Mask RCNN [12] wrongly detects objects inside the mirrors (c). With MirrorNet, we first detect and mask out the mirrors (d). We then obtain the correct depths (e), by interpolating the depths from surrounding pixels of the mirrors, and segmentation maps (f).
   </p>
 </div>
 <br>
@@ -88,7 +90,8 @@ some special visual properties that can be used for detection. Unlike these work
 <br>
 
 +--------------------------------------------------------------------------+
-
-![](./MirrorGlassDetection_files/counter.cgi)
+<div align=center>
+  <img src="./MirrorGlassDetection_files/counter.cgi">
+</div>
 
 *Last updated in July 2020.*
