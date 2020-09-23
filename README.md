@@ -1,5 +1,15 @@
 # -Mirror Glass Detection-
 
+<div id="outputFigDisplay" class="fig">
+    <pre id="taag_output_text" style="float:left;" class="flag" contenteditable="true">
+    ____  _                                        
+  / ___|| |__    __ _  _ __  _ __ ___ __   __ ___ 
+ | |    | '_ \  / _` || '__|| '_ ` _ \\ \ / // _ \
+ | |___ | | | || (_| || |   | | | | | |\ V /|  __/
+  \____||_| |_| \__,_||_|   |_| |_| |_| \_/  \___|   
+    </pre>
+</div>
+
 <p align="center">
   <a href="https://charmve.blog.csdn.net/"><img src="https://img.shields.io/badge/blog-Charmve-blue" alt="css"></a>
   <a href="https://github.com/Charmve/"><img src="https://www.geekxh.com/trending.svg?label=html" alt="html"></a>
