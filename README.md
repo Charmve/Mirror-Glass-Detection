@@ -88,7 +88,7 @@ some special visual properties that can be used for detection. Unlike these work
 <p>
   [<a href="http://www.cs.cityu.edu.hk/~rynson/papers/iccv19a.pdf" target="_blank">paper</a>] | 
   [<a href="http://www.cs.cityu.edu.hk/~rynson/papers/demos/iccv19a-supp.pdf" target="_blank">suppl</a>]| 
-  [<a href="https://github.com/Mhaiyang/ICCV2019_MirrorNet" target="_blank">code and updated</a>] |
+  [<a href="https://github.com/Charmve/Mirror-Glass-Detection/tree/master/ICCV2019_MirrorNet" target="_blank">code and updated</a>] |
   [<a href="https://drive.google.com/file/d/1Znw92fO6lCKfXejjSSyMyL1qtFepgjPI/view?usp=sharing" target="_blank">dataset</a>]
 </p> 
  
