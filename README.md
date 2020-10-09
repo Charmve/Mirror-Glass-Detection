@@ -35,7 +35,7 @@ some special visual properties that can be used for detection. Unlike these work
 <p>
   [<a href="http://www.cs.cityu.edu.hk/~rynson/papers/cvpr20c.pdf" target="_blank">paper</a>] |
   [<a href="http://www.cs.cityu.edu.hk/~rynson/papers/demos/cvpr20c-supp.pdf" target="_blank">suppl</a>]|
-  [<a href="http://www.cs.cityu.edu.hk/~rynson/papers/demos/cvpr20c-supp.pdf" target="_blank">code</a>] |
+  [code] |
   [dataset] 
 </p>
 <p>Jiaying Lin, Guodong Wang, and Rynson Lau <br>
