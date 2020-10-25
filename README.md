@@ -1,4 +1,4 @@
-# -Mirror Glass Detection-
+# Mirror & Glass Detection in Real Scene
 
 <div id="outputFigDisplay" class="fig">
     <pre id="taag_output_text" style="float:left;" class="flag" contenteditable="true">
