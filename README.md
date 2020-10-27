@@ -27,7 +27,7 @@ some special visual properties that can be used for detection. Unlike these work
                                                                          
 <p>We are also interested in exploring the application of our mirror/glass detection methods in autonomous navigation.</p>   
 
-<hr><br>
+<br>
 
 
 ## Progressive Mirror Detection
