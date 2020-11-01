@@ -11,9 +11,10 @@
 </div>
 
 <p align="center">
-  <a href="https://charmve.blog.csdn.net/"><img src="https://img.shields.io/badge/blog-Charmve-blue" alt="css"></a>
-  <a href="https://github.com/Charmve/"><img src="https://www.geekxh.com/trending.svg?label=html" alt="html"></a>
-  <a href="https://github.com/haizlin/fe-interview/stargazers"><img src="https://img.shields.io/github/stars/geekxh/hello-algorithm.svg" alt="Statr"></a>
+  <a href="https://github.com/Charmve"><img src="https://img.shields.io/badge/Github-Charmve-blue" alt="github"></a>
+  <a href="https://github.com/Charmve/"><img src="https://badgen.net/badge/Charmve/Glass-Detect?icon=sourcegraph&color=4ab8a1" alt="Charmve"></a>
+  <a href="./References.md"><img src="https://img.shields.io/badge/Github-Charmve-blue" alt="github"></a>
+  <a href="https://github.com/Charmve/Transparent-Object-Segmentation"><img src="https://img.shields.io/badge/Repo-Transparent-Object-Segmentation-blue" alt="Repo"></a>
 </p>
 
 <p align="center"> <font size=4 color="blue"><strong>Mirror and Glass Detection/Segmentation</strong></font></p>
