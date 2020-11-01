@@ -1,6 +1,6 @@
 # 镜面/玻璃真实场景中的检测和语义分割
 
-<a href="https://github.com/Charmve" target="_blank">Charmve</a> | English | <a href="ReadmeEnglish.md" target="_blank">Chinese</a>
+<a href="https://github.com/Charmve" target="_blank">Charmve</a> | <a href="README.md" target="_blank">English</a> | Chinese
 
 <div align="center">
     <img src="logo-GlassDetec.png" width="400px">
