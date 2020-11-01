@@ -1,7 +1,7 @@
 # Mirror & Glass Detection in Real Scene
 
 <div align="center">
-    <img src="logo-GlassDetec.png" width="200px">
+    <img src="logo-GlassDetec.png" width="400px">
 </div>
 
 <p align="center">
