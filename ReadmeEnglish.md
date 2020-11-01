@@ -26,9 +26,7 @@
 我也有兴趣探索镜子/玻璃检测方法在自主导航中的应用。视频：https://www.zhihu.com/zvideo/1302257849481818112
 
 
-## 渐进镜检测
-
-Progressive Mirror Detection
+## 渐进镜检测Progressive Mirror Detection
 
 <p>
   [<a href="http://www.cs.cityu.edu.hk/~rynson/papers/cvpr20c.pdf" target="_blank">paper</a>] |
@@ -62,7 +60,8 @@ Progressive Mirror Detection
 
 
 <hr><br>
-## Don't Hit Me! Glass Detection in Real-world Scenes   
+
+## Don't Hit Me! 真实场景中的玻璃检测
 
 <p>
   [<a href="http://www.cs.cityu.edu.hk/~rynson/papers/cvpr20d.pdf" target="_blank">paper</a>] | 
