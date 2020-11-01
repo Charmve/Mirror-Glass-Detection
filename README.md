@@ -107,6 +107,9 @@ some special visual properties that can be used for detection. Unlike these work
 <br>
 <br>
 
+
+Hopefully, feel free to <a href="CONTRIBUTING.md" target="_blank">CONTRIBUTE</a>. I'd like to appreciate the open source contributors of the above data sincerely.
+
 *<i>Last updated in July 2020.</i><br>
 Cited in <a href="https://www.cs.cityu.edu.hk/" target="_blank">https://www.cs.cityu.edu.hk/</a>
 
