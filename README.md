@@ -13,8 +13,8 @@
 <p align="center">
   <a href="https://github.com/Charmve"><img src="https://img.shields.io/badge/Github-Charmve-blue" alt="github"></a>
   <a href="https://github.com/Charmve/"><img src="https://badgen.net/badge/Charmve/Glass-Detect?icon=sourcegraph&color=4ab8a1" alt="Charmve"></a>
-  <a href="./References.md"><img src="https://img.shields.io/badge/Github-Charmve-blue" alt="github"></a>
-  <a href="https://github.com/Charmve/Transparent-Object-Segmentation"><img src="https://img.shields.io/badge/Repo-Transparent-Object-Segmentation-blue" alt="Repo"></a>
+  <a href="./References.md"><img src="https://img.shields.io/badge/References--green" alt="reference"></a>
+  <a href="https://github.com/Charmve/Transparent-Object-Segmentation"><img src="https://img.shields.io/badge/Repo-Transparent%20Object%20Segmentation-red" alt="Repo"></a>
 </p>
 
 <p align="center"> <font size=4 color="blue"><strong>Mirror and Glass Detection/Segmentation</strong></font></p>
