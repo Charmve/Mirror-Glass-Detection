@@ -1,4 +1,4 @@
-# Mirror & Glass Detection in Real Scene
+# Mirror & Glass Detection in Real-world Scenes
 
 <a href="https://github.com/Charmve" target="_blank">Charmve</a> | English | <a href="ReadmeEnglish.md" target="_blank">Chinese</a>
 
