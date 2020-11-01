@@ -13,7 +13,7 @@
 
 <p align="center"> <font size=4 color="blue"><strong>Mirror and Glass Detection/Segmentation</strong></font></p>
 
-
+<br>
 <p>In this project, we are developing techniques for mirror and glass detection/segmentation. While a mirror is a reflective surface that reflects the scene in front of it, glass is a transparent surface that transmits the scene from the back side and often also reflects the scene in front of it too. In general, both mirrors and glass do not have their own visual appearances. They only reflect/transmit the appearances of their surroundings. </p> 
 
 <p>As mirrors and glass do not have their own appearances, it is not straightforward to develop automatic algorithms to detect and segment them. However, as they appear everywhere in our daily life, it can be problematic if we are not able to detect them reliably. For example, a vision-based depth sensor may falsely estimate the depth of a piece of mirror/glass as the depth of the objects inside it, a robot may not be aware of the presence of a mirror/glass wall, and a drone may collide into a high rise (noted that most high rises are covered by glass these days).</p>                                                                
