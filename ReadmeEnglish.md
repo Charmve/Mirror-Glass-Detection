@@ -1,4 +1,4 @@
-# 镜面/玻璃真实场景中的检测和语义分割
+# 真实场景中的镜面/玻璃检测和语义分割
 
 <a href="https://github.com/Charmve" target="_blank">Charmve</a> | <a href="README.md" target="_blank">English</a> | Chinese
 
