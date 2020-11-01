@@ -1,4 +1,4 @@
-# Mirror & Glass Detection in Real Scene
+
 
 <div align="center">
     <img src="logo-GlassDetec.png" width="400px">
@@ -11,7 +11,9 @@
   <a href="https://github.com/Charmve/Transparent-Object-Segmentation"><img src="https://img.shields.io/badge/Repo-Transparent%20Object%20Segmentation-red" alt="Repo"></a>
 </p>
 
-<p align="center"> <font size=4 color="blue"><strong>Mirror and Glass Detection/Segmentation</strong></font></p>
+
+# Mirror & Glass Detection in Real Scene
+
 
 <p>In this project, we are developing techniques for mirror and glass detection/segmentation. While a mirror is a reflective surface that reflects the scene in front of it, glass is a transparent surface that transmits the scene from the back side and often also reflects the scene in front of it too. In general, both mirrors and glass do not have their own visual appearances. They only reflect/transmit the appearances of their surroundings. </p> 
 
