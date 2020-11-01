@@ -110,6 +110,8 @@ some special visual properties that can be used for detection. Unlike these work
 *<i>Last updated in July 2020.</i><br>
 Cited in <a href="https://www.cs.cityu.edu.hk/" target="_blank">https://www.cs.cityu.edu.hk/</a>
 
+<a href="MirrorGlassDetection.html" target="_blank">original page</a>
+
 <div align=center>
   <img src="./MirrorGlassDetection_files/counter.cgi">
 </div>
