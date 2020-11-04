@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="https://github.com/Charmve"><img src="https://img.shields.io/badge/Github-Charmve-blue" alt="github"></a>
-  <a href="https://github.com/Charmve/Mirror-Glass-Detection"><img src="https://img.shields.io/badge/Charmve-Glass%20Detect-yellow" alt="Charmve"></a>
+  <a href="https://github.com/Charmve/Mirror-Glass-Detection"><img src="https://img.shields.io/badge/👓-Glass%20Detect-yellow" alt="Charmve"></a>
   <a href="./References.md"><img src="https://img.shields.io/badge/doc-Related%20Work-green" alt="reference"></a>
   <a href="https://github.com/Charmve/Transparent-Object-Segmentation" target="_blank"><img src="https://img.shields.io/badge/Repo-Transparent%20Object%20Segmentation-red" alt="Repo"></a>
 </p>
