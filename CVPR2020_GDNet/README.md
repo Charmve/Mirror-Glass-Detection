@@ -9,8 +9,7 @@
 Glass is very common in our daily life. Existing computer vision systems neglect the glass and thus might lead to severe consequence, \eg, the robot might crash into the glass wall. However, sensing the presence of the glass is not straightforward. The key challenge is that arbitrary objects/scenes can appear behind the glass and the content presented in the glass region typically similar to those outside of it. In this paper, we raise an interesting but important problem of detecting glass from a single RGB image. To address this problem, we construct a large-scale glass detection dataset (GDD) and design a glass detection network, called GDNet, by learning abundant contextual features from a global perspective with a novel large-field contextual feature integration module. Extensive experiments demonstrate the proposed method achieves superior glass detection results on our GDD test set. Particularly, we outperform state-of-the-art methods that fine-tuned for glass detection.
 
 <br>
-<h2><p><font size="6"><b>GDNet</b></font></p></h2>
-<hr/>
+<h3><p><font size="6"><b>GDNet</b></font></p></h3>
 <table align="center">
 <tr>
 	<td align="center"><img border=0 height=270 width=960 src="pipeline.png"></td>
@@ -18,8 +17,7 @@ Glass is very common in our daily life. Existing computer vision systems neglect
 </table>
 
 <br>
-<h2><p><font size="6"><b>Visual Results</b></font></p></h2>
-<hr/>
+<h3><p><font size="6"><b>Visual Results</b></font></p></h3>
 <table align="center">
 <tr>
 	<td align="center"><img border=0 height=300 width=900 src="CVPR2020_Glass_1.gif"></td>
