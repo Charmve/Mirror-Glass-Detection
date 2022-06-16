@@ -27,7 +27,7 @@ some special visual properties that can be used for detection. Unlike these work
 
 <br>
 
-More information and evolution can be seen at https://www.cs.cityu.edu.hk/~rynson/projects/mirror_glass/MirrorGlassDetection.html . 
+More information and evolution can be seen at https://www.cs.cityu.edu.hk/~rynson/projects/mirror_glass/MirrorGlassDetection.html , https://xinyangdut.github.io/detection_segmentation/index.html. 
 
 
 ## Progressive Mirror Detection
